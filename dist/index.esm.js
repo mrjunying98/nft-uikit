@@ -1873,146 +1873,10 @@ var Logo$1 = function (_a) {
 };
 var templateObject_1$y;
 
-var links = [
-    {
-        label: "Home",
-        icon: "HomeIcon",
-        href: "/",
-    },
-    {
-        label: "Trade",
-        icon: "TradeIcon",
-        items: [
-            {
-                label: "Exchange",
-                href: "https://exchange.pancakeswap.finance",
-            },
-            {
-                label: "Liquidity",
-                href: "https://exchange.pancakeswap.finance/#/pool",
-            },
-        ],
-    },
-    {
-        label: "Farms",
-        icon: "FarmIcon",
-        href: "/farms",
-    },
-    {
-        label: "Pools",
-        icon: "PoolIcon",
-        href: "/syrup",
-    },
-    {
-        label: "Lottery",
-        icon: "TicketIcon",
-        href: "/lottery",
-    },
-    {
-        label: "NFT",
-        icon: "NftIcon",
-        href: "/nft",
-    },
-    {
-        label: "Profile & Teams",
-        icon: "GroupsIcon",
-        items: [
-            {
-                label: "Leaderboard",
-                href: "/",
-            },
-            {
-                label: "YourProfile",
-                href: "/",
-            },
-        ],
-        calloutClass: "rainbow",
-    },
-    {
-        label: "Info",
-        icon: "InfoIcon",
-        items: [
-            {
-                label: "Overview",
-                href: "https://pancakeswap.info",
-            },
-            {
-                label: "Tokens",
-                href: "https://pancakeswap.info/tokens",
-            },
-            {
-                label: "Pairs",
-                href: "https://pancakeswap.info/pairs",
-            },
-            {
-                label: "Accounts",
-                href: "https://pancakeswap.info/accounts",
-            },
-        ],
-    },
-    {
-        label: "IFO",
-        icon: "IfoIcon",
-        items: [
-            {
-                label: "Next",
-                href: "/ifo",
-            },
-            {
-                label: "History",
-                href: "/ifo/history",
-            },
-        ],
-    },
-    {
-        label: "More",
-        icon: "MoreIcon",
-        items: [
-            // {
-            //   label: "Voting",
-            //   href: "https://voting.pancakeswap.finance",
-            // },
-            {
-                label: "Github",
-                href: "https://github.com/goosedefi/",
-            },
-            {
-                label: "Docs",
-                href: "https://goosedefi.gitbook.io/goose-finance/",
-            },
-            {
-                label: "Blog",
-                href: "https://goosefinance.medium.com/",
-            },
-        ],
-    },
-];
-var MENU_HEIGHT = 64;
-var SIDEBAR_WIDTH_FULL = 240;
-var SIDEBAR_WIDTH_REDUCED = 56;
-
-var StyledPanel = styled.div(templateObject_1$z || (templateObject_1$z = __makeTemplateObject(["\n  position: fixed;\n  padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background-color: transparent;\n  width: ", ";\n  height: 100vh;\n  transition: padding-top 0.2s, width 0.2s;\n  border-right: ", ";\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n\n  ", " {\n    border-right: 2px solid rgba(133, 133, 133, 0.1);\n    width: ", ";\n  }\n"], ["\n  position: fixed;\n  padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background-color: transparent;\n  width: ", ";\n  height: 100vh;\n  transition: padding-top 0.2s, width 0.2s;\n  border-right: ", ";\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n\n  ", " {\n    border-right: 2px solid rgba(133, 133, 133, 0.1);\n    width: ", ";\n  }\n"])), function (_a) {
-    var showMenu = _a.showMenu;
-    return (showMenu ? "80px" : 0);
-}, function (_a) {
-    var isPushed = _a.isPushed;
-    return (isPushed ? SIDEBAR_WIDTH_FULL + "px" : 0);
-}, function (_a) {
-    var isPushed = _a.isPushed;
-    return (isPushed ? "2px solid rgba(133, 133, 133, 0.1)" : 0);
-}, function (_a) {
-    var isPushed = _a.isPushed;
-    return (isPushed ? "initial" : "hidden");
-}, function (_a) {
-    var theme = _a.theme;
-    return theme.mediaQueries.nav;
-}, function (_a) {
-    var isPushed = _a.isPushed;
-    return (isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED) + "px";
-});
+var StyledPanel = styled.div(templateObject_1$z || (templateObject_1$z = __makeTemplateObject(["\n\n"], ["\n\n"])));
 var Panel = function (props) {
-    var isPushed = props.isPushed, showMenu = props.showMenu;
-    return (React.createElement(StyledPanel, { isPushed: isPushed, showMenu: showMenu }));
+    props.isPushed; props.showMenu;
+    return (React.createElement(StyledPanel, null));
 };
 var templateObject_1$z;
 
@@ -2211,6 +2075,124 @@ var UserBlock = function (_a) {
             onPresentConnectModal();
         } }, "Connect"))));
 };
+
+var links = [
+    {
+        label: "Home",
+        icon: "HomeIcon",
+        href: "/",
+    },
+    {
+        label: "Trade",
+        icon: "TradeIcon",
+        items: [
+            {
+                label: "Exchange",
+                href: "https://exchange.pancakeswap.finance",
+            },
+            {
+                label: "Liquidity",
+                href: "https://exchange.pancakeswap.finance/#/pool",
+            },
+        ],
+    },
+    {
+        label: "Farms",
+        icon: "FarmIcon",
+        href: "/farms",
+    },
+    {
+        label: "Pools",
+        icon: "PoolIcon",
+        href: "/syrup",
+    },
+    {
+        label: "Lottery",
+        icon: "TicketIcon",
+        href: "/lottery",
+    },
+    {
+        label: "NFT",
+        icon: "NftIcon",
+        href: "/nft",
+    },
+    {
+        label: "Profile & Teams",
+        icon: "GroupsIcon",
+        items: [
+            {
+                label: "Leaderboard",
+                href: "/",
+            },
+            {
+                label: "YourProfile",
+                href: "/",
+            },
+        ],
+        calloutClass: "rainbow",
+    },
+    {
+        label: "Info",
+        icon: "InfoIcon",
+        items: [
+            {
+                label: "Overview",
+                href: "https://pancakeswap.info",
+            },
+            {
+                label: "Tokens",
+                href: "https://pancakeswap.info/tokens",
+            },
+            {
+                label: "Pairs",
+                href: "https://pancakeswap.info/pairs",
+            },
+            {
+                label: "Accounts",
+                href: "https://pancakeswap.info/accounts",
+            },
+        ],
+    },
+    {
+        label: "IFO",
+        icon: "IfoIcon",
+        items: [
+            {
+                label: "Next",
+                href: "/ifo",
+            },
+            {
+                label: "History",
+                href: "/ifo/history",
+            },
+        ],
+    },
+    {
+        label: "More",
+        icon: "MoreIcon",
+        items: [
+            // {
+            //   label: "Voting",
+            //   href: "https://voting.pancakeswap.finance",
+            // },
+            {
+                label: "Github",
+                href: "https://github.com/goosedefi/",
+            },
+            {
+                label: "Docs",
+                href: "https://goosedefi.gitbook.io/goose-finance/",
+            },
+            {
+                label: "Blog",
+                href: "https://goosefinance.medium.com/",
+            },
+        ],
+    },
+];
+var MENU_HEIGHT = 64;
+var SIDEBAR_WIDTH_FULL = 240;
+var SIDEBAR_WIDTH_REDUCED = 56;
 
 var Icon$Q = function (props) {
     var theme = useTheme();
