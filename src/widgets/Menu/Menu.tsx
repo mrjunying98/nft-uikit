@@ -124,7 +124,7 @@ const Menu: React.FC<NavProps> = ({
           {profile && <Avatar profile={profile} />}
         </Flex>
       </StyledNav>
-      {/* <BodyWrapper>
+      <BodyWrapper>
         <Panel
           isPushed={isPushed}
           isMobile={isMobile}
@@ -143,7 +143,7 @@ const Menu: React.FC<NavProps> = ({
           {children}
         </Inner>
         <MobileOnlyOverlay show={isPushed} onClick={() => setIsPushed(false)} role="presentation" />
-      </BodyWrapper> */}
+      </BodyWrapper>
     </Wrapper>
   );
 };
