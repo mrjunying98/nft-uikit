@@ -139,6 +139,9 @@ const Menu: React.FC<NavProps> = ({
           links={links}
           priceLink={priceLink}
         />
+        <Inner isPushed={isPushed} showMenu={showMenu}>
+          {children}
+        </Inner>
         <MobileOnlyOverlay show={isPushed} onClick={() => setIsPushed(false)} role="presentation" />
       </BodyWrapper>
     </Wrapper>
