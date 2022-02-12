@@ -118,7 +118,7 @@ const Menu: React.FC<NavProps> = ({
           href={homeLink?.href ?? "/"}
         />
         <Flex>
-          <Button size="sm" style={{backgroundColor: "#000000", color: "#FFFFFF", lineHeight: "16px", fontSize: "0.88rem", boxShadow:"-0.16em -0.2em #FFFF00, 0.16em 0.2em #0000FF"}}>Market Place</Button>
+          <Button size="sm" style={{backgroundColor: "#000000", color: "#FFFFFF", lineHeight: "16px", fontSize: "0.88rem", boxShadow:"-0.16em -0.2em #FFFF00, 0.16em 0.2em #0000FF", marginRight: "20px"}}>Market Place</Button>
           <UserBlock account={account} login={login} logout={logout} />
           {profile && <Avatar profile={profile} />}
         </Flex>
