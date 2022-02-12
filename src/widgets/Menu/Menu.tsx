@@ -4,6 +4,7 @@ import throttle from "lodash/throttle";
 import Overlay from "../../components/Overlay/Overlay";
 import { Flex } from "../../components/Flex";
 import { useMatchBreakpoints } from "../../hooks";
+import Button from "../../components/Button/Button";
 import Logo from "./Logo";
 import Panel from "./Panel";
 import UserBlock from "./UserBlock";
@@ -117,6 +118,7 @@ const Menu: React.FC<NavProps> = ({
           href={homeLink?.href ?? "/"}
         />
         <Flex>
+          <Button size="sm" style={{backgroundColor: "#000000", color: "#FFFFFF", lineHeight: "16px", fontSize: "0.88rem", boxShadow:"-0.16em -0.2em #FFFF00, 0.16em 0.2em #0000FF"}}>Market Place</Button>
           <UserBlock account={account} login={login} logout={logout} />
           {profile && <Avatar profile={profile} />}
         </Flex>

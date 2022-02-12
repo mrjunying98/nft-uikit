@@ -25,6 +25,7 @@ const UserBlock: React.FC<Props> = ({ account, login, logout }) => {
           {accountEllipsis}
         </Button>
       ) : (
+        
         <Button
           size="sm"
           style={{backgroundColor: "#000000", color: "#FFFFFF", lineHeight: "16px", fontSize: "0.88rem", boxShadow:"-0.16em -0.2em #FFFF00, 0.16em 0.2em #0000FF"}}
