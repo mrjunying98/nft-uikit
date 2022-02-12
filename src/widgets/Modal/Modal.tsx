@@ -14,7 +14,7 @@ interface Props extends InjectedProps {
 }
 
 const StyledModal = styled.div`
-  background: ${({ theme }) => theme.modal.background};
+  background: #000000;
   box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);
   border-radius: 32px;
   width: 100%;
@@ -55,7 +55,7 @@ const Modal: React.FC<Props> = ({
             <ArrowBackIcon color="primary" />
           </IconButton>
         )}
-        <Heading style={{color:"transparent",  textShadow: "-0.06em 0 #FFFF00, 0.06em 0 #0000FF", fontSize:"1rem"}}>{title}</Heading>
+        <Heading style={{color:"#F8D901",  textShadow: "0px 0px 10px #d3cb92", fontSize:"1.25rem"}}>{title}</Heading>
       </ModalTitle>
       {!hideCloseButton && (
         <IconButton variant="text" onClick={onDismiss} aria-label="Close the dialog">
