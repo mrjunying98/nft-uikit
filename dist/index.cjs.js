@@ -1569,7 +1569,7 @@ var zIndices = {
     modal: 100,
 };
 var base = {
-    siteWidth: 1200,
+    siteWidth: 1500,
     breakpoints: breakpoints,
     mediaQueries: mediaQueries,
     spacing: spacing,
